@@ -1,27 +1,38 @@
 # react-emoji-animation-button
 
-> Made with create-react-library
+<h5 align="center"><img src="demo.gif" /></h5>
+
+<p align="center">
+  <b><a align="center" href="https://kawa1214.github.io/react-emoji-animation-button/">See demo</a></b>
+  </br>
+  </br>
+</p>
+
+> A Emoji Animation Button.
 
 [![NPM](https://img.shields.io/npm/v/react-emoji-animation-button.svg)](https://www.npmjs.com/package/react-emoji-animation-button) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-emoji-animation-button
+npm install react-emoji-animation-button --save
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'react-emoji-animation-button'
-import 'react-emoji-animation-button/dist/index.css'
+import { EmojiAnimationButton } from 'react-emoji-animation-button'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+export default () => {
+  return 
+    <EmojiAnimationButton
+      text="😱"
+      complete="👍"
+      count={5}
+      initClicked={false}
+    />
 }
 ```
 
