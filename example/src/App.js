@@ -1,10 +1,19 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-emoji-animation-button'
+import { EmojiAnimationButton } from 'react-emoji-animation-button'
 import 'react-emoji-animation-button/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div style={{ padding: "3em" }}>
+      <EmojiAnimationButton
+        text="😱"
+        complete="👍"
+        count={5}
+        initClicked={false}
+      />
+    </div>
+  )
 }
 
 export default App
